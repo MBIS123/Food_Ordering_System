@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    align-items: center;
+    height: 100vh;
+    overflow: auto; }
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    background-color: orange;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure header is above content */
+}
+
+.content {
+    flex-grow: 1; /* Allow content to grow and fill the available space */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds viewport height */
+    padding: 20px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 200px; /* Adjust this as needed, or set a specific width like 200px */
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button, back-button :hover {
+    background-color: #0056b3; /* Button background color on hover */
+}     .container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+}
+.menu-items {
+    flex: 1; /* Takes up the remaining space */
+    height:20px; /* Adjust 100px to the combined height of other elements */
+    padding: 20px;
+}
+.menu-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.add-item-form {
+    width: 40%; /* Set width for the form section */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enables vertical scrolling if needed */
+}
+.menu-item-details {
+    text-align: center;
+}
+.menu-item-details h3 {
+    margin: 10px 0;
+}
+.menu-item-details p {
+    margin: 5px 0;
+}
+.menu-item-details .price {
+    font-weight: bold;
+}
+.menu-items {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.add-item-form h2 {
+    text-align: center;
+}
+.add-item-form form {
+    display: flex;
+    flex-direction: column;
+}
+.add-item-form form label,
+.add-item-form form input,
+.add-item-form form select,
+.add-item-form form button {
+    margin-bottom: 10px;
+}
+.add-item-form form button {
+    padding: 5px 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.add-item-form form button:hover {
+    opacity: 0.8;
+}
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+}
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th, td {
+    padding: 8px;
+}
+th {
+    background-color: #f9f9f9;
+}
+.header {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #777;
+}
+
+/*navigation bar*/
+    body, nav, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #f0ad4e; /* Use your desired background color */
+        width: 100%;
+        display: block;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex; /* Use flexbox to distribute space */
+        justify-content: space-between; /* Distribute items evenly */
+    }
+
+    nav li {
+        display: inline; /* Display list items inline */
+    }
+
+    nav a {
+        display: block; /* Make the anchor tags fill the list items */
+        padding: 10px 20px; /* Add some padding for clickable area and spacing */
+        color: white; /* Use your desired text color */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    nav a:hover {
+        background-color: #d9534f; /* Change for hover effect, use your desired color */
+    }
